@@ -107,7 +107,7 @@ a [aria-hidden="true"] {
     cursor: pointer;
     display: block;
     position: absolute;
-    background: url("/img/menu.svg");
+    background: url("../img/menu.svg");
     background-size: 2rem;
     background-repeat: no-repeat;
     width: 2rem;
@@ -120,7 +120,7 @@ a [aria-hidden="true"] {
     background-color: transparent;
   }
   .mobile-nav-toggle[aria-expanded="true"] {
-    background: url("/img/closed.svg");
+    background: url("../img/closed.svg");
     background-size: 2rem;
     background-repeat: no-repeat;
   }
