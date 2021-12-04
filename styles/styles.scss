@@ -26,8 +26,9 @@
 //  ==== BASIC STYLING
 
 body{
-    background: url(https://images.unsplash.com/32/Mc8kW4x9Q3aRR3RkP5Im_IMG_4417.jpg?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
-    background-size: cover;
+    background: url(https://images.unsplash.com/photo-1529641484336-ef35148bab06?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80);
+    background-repeat: no-repeat;
+    background-color: #222;
     color: white;
     overflow-x: hidden;
 }
@@ -75,6 +76,7 @@ a{
 .primary-header{
     align-items: center;
     justify-content: space-between;
+    margin: 1rem;
 }
 
 .mobile-nav-toggle{
@@ -91,9 +93,10 @@ a{
     padding-block: 2rem;
     padding-inline: 1.5rem;
     --gap: 2em;
+    border-radius: 15px;
+
     background-color: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(1rem);
-
 
     @media (max-width: 700px){
         position: fixed;
@@ -102,6 +105,7 @@ a{
         flex-direction: column;
         padding: 5rem 2rem;
         transition: transform 350ms ease-out;
+        border-radius: 0;
 
         &[data-visible="false"] {
             transform: translateX(100%);
